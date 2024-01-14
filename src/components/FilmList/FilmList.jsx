@@ -13,7 +13,7 @@ const FilmList = ({ movies }) => {
   const sortedMovies = movies
     .filter(({ title }) => title)
     .sort((a, b) => a.title.localeCompare(b.title));
-  const numberOfMoviesToShow = 15; 
+  const numberOfMoviesToShow = 25;
 
   return (
     <MoviesListContainer>
