@@ -16,12 +16,7 @@ const SearchForm = ({ handleSubmit }) => {
 
   return (
     <StyledForm onSubmit={onHandleSubmit}>
-      <StyledInput
-        name="movie"
-        required
-        value={query}
-        onChange={handleChange}
-      />
+      <StyledInput name="film" required value={query} onChange={handleChange} />
       <StyledButton type="submit">Search Film</StyledButton>
     </StyledForm>
   );

@@ -13,7 +13,7 @@ export const useFetchAllFilms = () => {
         const { data } = await getAllMoviesList();
         setMovies(data.results);
       } catch (error) {
-        setError('Something went wrong');
+        setError('What are folk man! Please try again!');
       } finally {
         setLoading(false);
       }

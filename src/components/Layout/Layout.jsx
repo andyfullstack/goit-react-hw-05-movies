@@ -18,7 +18,7 @@ export const SharedLayout = () => {
         </StyledLink>
 
         <StyledLink to="/movies">
-          <StyledH3>Movies</StyledH3>
+          <StyledH3>Video</StyledH3>
         </StyledLink>
       </StyledNav>
 
@@ -28,4 +28,3 @@ export const SharedLayout = () => {
     </SharedLayoutContainer>
   );
 };
-

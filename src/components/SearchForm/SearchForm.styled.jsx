@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledForm = styled.form`
   display: flex;
   gap: 15px;
-  margin-left: 25px;
+  margin: 25px 115px;
 `;
 
 export const StyledInput = styled.input`

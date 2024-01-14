@@ -16,7 +16,7 @@ export const useFetchFilmsDetails = () => {
         const data = await getAllMoviesInfo(movieId);
         setMovie(data);
       } catch (error) {
-        setError('Try to reload the page');
+        setError('Try to reload this page');
       } finally {
         setLoading(false);
       }

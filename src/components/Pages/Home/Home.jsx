@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       {loading && <Loader />}
-      {error && <h3>Try to reload the page</h3>}
+      {error && <h3>Try to reload this page</h3>}
       {movies.length !== 0 && <FilmList movies={movies} />}
     </div>
   );

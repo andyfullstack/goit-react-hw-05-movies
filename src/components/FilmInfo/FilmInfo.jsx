@@ -33,7 +33,7 @@ const FilmInfo = ({
               : defaultImg
           }
           alt={title}
-          width={250}
+          width={280}
         />
         <MovieDetails>
           {title ? (

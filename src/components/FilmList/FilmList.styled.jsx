@@ -8,7 +8,7 @@ export const MoviesListContainer = styled.ul`
 export const MovieListItem = styled.li`
   &:hover,
   &:focus {
-    h4 {
+    h3 {
       color: #6c2ffc;
       transition: color 0.3s ease-in-out;
     }
@@ -19,7 +19,7 @@ export const MovieTitleLink = styled(Link)`
   text-decoration: none;
 `;
 
-export const MovieTitle = styled.h4`
+export const MovieTitle = styled.h3`
   color: black;
-  margin: 10px;
+  margin: 15px 140px;
 `;

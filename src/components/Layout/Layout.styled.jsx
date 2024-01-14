@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 
 export const StyledNav = styled.nav`
   display: flex;
-  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
   flex-direction: row;
   margin-left: 25px;
 `;
@@ -13,7 +15,7 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
 `;
 
-export const StyledH3 = styled.h3`
+export const StyledH3 = styled.h1`
   color: #7969c3;
 
   &:hover {
