@@ -17,7 +17,8 @@ import {
 const FilmInfo = ({
   movie: { title, poster_path, release_date, overview, genres, vote_average },
 }) => {
-  const defaultImg = 'https://prnt.sc/ktaaieNQK6Hc';
+  const defaultImg =
+    'https://cdn.pixabay.com/photo/2013/11/28/10/02/camera-219958_1280.jpg';
 
   const genreList = genres
     ? genres.map(elem => elem.name).join(',')
