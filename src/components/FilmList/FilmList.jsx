@@ -1,30 +1,30 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import {
-  MovieListItem,
-  MovieTitle,
-  MovieTitleLink,
-  MoviesListContainer,
+  FilmListItem,
+  FilmTitle,
+  FilmTitleLink,
+  FilmListContainer,
 } from './FilmList.styled';
 
 const FilmList = ({ movies }) => {
   const location = useLocation();
 
-  const sortedMovies = movies
+  const sortedFilms = movies
     .filter(({ title }) => title)
     .sort((a, b) => a.title.localeCompare(b.title));
-  const numberOfMoviesToShow = 25;
+  const numberOfFilmsToShow = 25;
 
   return (
-    <MoviesListContainer>
-      {sortedMovies.slice(0, numberOfMoviesToShow).map(({ id, title }) => (
-        <MovieListItem key={id}>
-          <MovieTitleLink to={`/movies/${id}`} state={{ from: location }}>
-            <MovieTitle>{title}</MovieTitle>
-          </MovieTitleLink>
-        </MovieListItem>
+    <FilmListContainer>
+      {sortedFilms.slice(0, numberOfFilmsToShow).map(({ id, title }) => (
+        <FilmListItem key={id}>
+          <FilmTitleLink to={`/movies/${id}`} state={{ from: location }}>
+            <FilmTitle>{title}</FilmTitle>
+          </FilmTitleLink>
+        </FilmListItem>
       ))}
-    </MoviesListContainer>
+    </FilmListContainer>
   );
 };
 

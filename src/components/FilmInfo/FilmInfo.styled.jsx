@@ -1,21 +1,21 @@
 import styled from 'styled-components';
 
-export const MovieInfoContainer = styled.div`
+export const FilmInfoContainer = styled.div`
   display: flex;
   gap: 15px;
   margin: 15px;
 `;
 
-export const MovieImage = styled.img`
+export const FilmImage = styled.img`
   border-radius: 4px;
 `;
 
-export const MovieDetails = styled.div`
+export const FilmDetails = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
-export const MovieTitle = styled.h3`
+export const FilmTitle = styled.h3`
   margin-bottom: 0;
   color: #086866;
 `;

@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const MoviesListContainer = styled.ul`
+export const FilmListContainer = styled.ul`
   list-style: none;
 `;
 
-export const MovieListItem = styled.li`
+export const FilmListItem = styled.li`
   &:hover,
   &:focus {
     h3 {
@@ -15,11 +15,11 @@ export const MovieListItem = styled.li`
   }
 `;
 
-export const MovieTitleLink = styled(Link)`
+export const FilmTitleLink = styled(Link)`
   text-decoration: none;
 `;
 
-export const MovieTitle = styled.h3`
+export const FilmTitle = styled.h3`
   color: black;
   margin: 15px 140px;
 `;

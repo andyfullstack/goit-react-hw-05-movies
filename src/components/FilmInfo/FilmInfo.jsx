@@ -4,10 +4,10 @@ import {
   AdditionalInfoHeading,
   GenresHeading,
   GenresList,
-  MovieDetails,
-  MovieImage,
-  MovieInfoContainer,
-  MovieTitle,
+  FilmDetails,
+  FilmImage,
+  FilmInfoContainer,
+  FilmTitle,
   OverviewHeading,
   OverviewText,
   ReleaseDate,
@@ -26,8 +26,8 @@ const FilmInfo = ({
 
   return (
     <>
-      <MovieInfoContainer>
-        <MovieImage
+      <FilmInfoContainer>
+        <FilmImage
           src={
             poster_path
               ? `https://image.tmdb.org/t/p/w500/${poster_path}`
@@ -36,15 +36,15 @@ const FilmInfo = ({
           alt={title}
           width={280}
         />
-        <MovieDetails>
+        <FilmDetails>
           {title ? (
             <>
-              <MovieTitle>{title}</MovieTitle>
+              <FilmTitle>{title}</FilmTitle>
               <ReleaseDate>{release_date}</ReleaseDate>
             </>
           ) : (
             <>
-              <MovieTitle>Title:</MovieTitle>
+              <FilmTitle>Title:</FilmTitle>
               <p>No info</p>
             </>
           )}
@@ -53,8 +53,8 @@ const FilmInfo = ({
           <OverviewText>{overview ? overview : 'No info'}</OverviewText>
           <GenresHeading>Genres:</GenresHeading>
           <GenresList>{genreList}</GenresList>
-        </MovieDetails>
-      </MovieInfoContainer>
+        </FilmDetails>
+      </FilmInfoContainer>
       <AdditionalInfoHeading>Additional information</AdditionalInfoHeading>
     </>
   );
